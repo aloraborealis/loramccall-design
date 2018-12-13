@@ -1,0 +1,122 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width:100%;
+}
+
+/*****CONTAINER******/
+.container{
+
+    color:#131313;
+	  font-family: 'Montserrat', sans-serif;
+    padding:20px;
+}
+
+/*****HEADER*****/
+
+h1 {
+    font-size: 56px;
+    font-variant: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    float:left;
+    padding:40px 40px 40px 20px;
+}
+
+h1 span{
+    color: #6d995b;
+}
+
+nav{
+    border-style: dotted;
+    font-size: 36px;
+    text-transform: uppercase;
+    float:right;
+    padding: 50px 10px 50px 50px;
+    word-spacing: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+/*****TOP SECTION******/
+
+.top-section h2{
+  color: #6d995b;
+  padding-top:30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.top-section{
+    line-height:48px;
+    padding-bottom: 30px;
+}
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+p {  font-size: 32px;
+
+}
+
+/******BOTTOM SECTION******/
+
+.bottom-section{
+
+    height: 230px;
+    line-height: 36px;
+    overflow:auto;
+    padding-bottom:20px;
+
+}
+
+.bottom-section h3{
+    font-variant: bold;
+    padding-bottom:10px;
+    text-transform: uppercase;
+
+
+}
+.bottom-section #menu{
+    float:left;
+    width:32%;
+}
+.bottom-section #review{
+     float:left;
+    width:33%;
+}
+
+.bottom-section #contact{
+     float:left;
+    padding-left:45px;
+    width:33%;
+}
+
+a {
+    color: #006600;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+/******FOOTER******/
+footer h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    letter-spacing: 10px;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer span{
+    color: #6d995b;
+    font-family: 'Montez', cursive;
+
+
+}

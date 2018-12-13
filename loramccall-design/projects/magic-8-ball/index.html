@@ -1,0 +1,296 @@
+<html>
+<head>
+  <title>MAGIC 8 BALL</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style id="jsbin-css">
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #454545;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+  background-image: url('bkgd2.png');
+}
+.page {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ball, .button {
+  margin: 0 auto;
+  position:relative; 
+  width:80%;
+}
+.answer {
+  position:absolute;
+  width:14%;
+  top:50%;
+  left:50%;
+  margin-top:-60px;
+  margin-left:-65px;
+  font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+#questionButton {
+  font: 26px 'Montserrat', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  border: none;
+  color: #f8f8f8;
+  background-color: #f16059;
+  padding: 10px 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 0.25em;
+  text-align: center;
+}
+header span {
+  font-size: 60px;
+  color: #f16059;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+</style>
+</head>
+
+  <body>
+  <div class="page">
+
+    <header>
+      <h1>MAGIC <span>8</span> BALL</h1>
+    </header>
+
+    <div class="ball" style="position:relative; width:80%" >
+
+      <p id="answer" class="answer" align="center" >
+        THIS IS WHERE THE ANSWER GOES
+      </p>
+
+       <img id="8ball" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
+
+    </div>
+
+    
+
+    <div class="button" style="position:relative; width:80%">
+      <button id="questionButton">ASK ME ANYTHING </button>
+    </div>
+
+    <footer>
+      <p>© Skillcrush 2016</p>
+    </footer>
+
+
+  <script type="text/javascript" src="script.js"></script>
+
+  </div>
+  <script id="jsbin-javascript">
+$(document).ready(function(){
+var magic8List = {};
+  
+this.Answers = ["You will succeed in your efforts.", "More will be revealed", "Beware of strange sounds", "You will fail miserably","A sudden craving for anchovies will surprise you", "A friend in need will contact you","Be aware of men with pinkie rings", "Pray for guidance and you will have it"];
+
+$("#answer").hide();
+ 
+this.askQuestion = function() {
+var randomNumber = Math.random();
+var randomNumberArray = randomNumber * this.Answers.length;
+var randomIndex = Math.floor(randomNumberArray);
+var randomAnswer = this.Answers[randomIndex];
+$("#answer").text(randomAnswer);
+};
+this.askQuestion();
+
+  
+var onClick = function() {
+  
+  setTimeout(
+       function() {
+  $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png");
+$("#answer").fadeIn(5000);
+var popQuestion = prompt("Ask a yes/no question");
+$("#8ball").effect( "shake" );}, 500);
+  
+         
+};
+
+$("#questionButton").click(onClick);
+
+$("#answer").hide();
+
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><html>
+<head>
+  <title>MAGIC 8 BALL</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"><\/script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"><\/script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <body>
+  <div class="page">
+
+    <header>
+      <h1>MAGIC <span>8</span> BALL</h1>
+    </header>
+
+    <div class="ball" style="position:relative; width:80%" >
+
+      <p id="answer" class="answer" align="center" >
+        THIS IS WHERE THE ANSWER GOES
+      </p>
+
+       <img id="8ball" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
+
+    </div>
+
+    
+
+    <div class="button" style="position:relative; width:80%">
+      <button id="questionButton">ASK ME ANYTHING </button>
+    </div>
+
+    <footer>
+      <p>© Skillcrush 2016</p>
+    </footer>
+
+
+  <script type="text/javascript" src="script.js"><\/script>
+
+  </div>
+  </body>
+
+</html>
+
+
+
+
+</script>
+
+<script id="jsbin-source-css" type="text/css">body {
+  font-family: "Montserrat", sans-serif;
+  color: #454545;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+  background-image: url('bkgd2.png');
+}
+.page {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ball, .button {
+  margin: 0 auto;
+  position:relative; 
+  width:80%;
+}
+.answer {
+  position:absolute;
+  width:14%;
+  top:50%;
+  left:50%;
+  margin-top:-60px;
+  margin-left:-65px;
+  font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+}
+
+#questionButton {
+  font: 26px 'Montserrat', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  border: none;
+  color: #f8f8f8;
+  background-color: #f16059;
+  padding: 10px 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 0.25em;
+  text-align: center;
+}
+header span {
+  font-size: 60px;
+  color: #f16059;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+
+
+
+
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">$(document).ready(function(){
+var magic8List = {};
+  
+this.Answers = ["You will succeed in your efforts.", "More will be revealed", "Beware of strange sounds", "You will fail miserably","A sudden craving for anchovies will surprise you", "A friend in need will contact you","Be aware of men with pinkie rings", "Pray for guidance and you will have it"];
+
+$("#answer").hide();
+ 
+this.askQuestion = function() {
+var randomNumber = Math.random();
+var randomNumberArray = randomNumber * this.Answers.length;
+var randomIndex = Math.floor(randomNumberArray);
+var randomAnswer = this.Answers[randomIndex];
+$("#answer").text(randomAnswer);
+};
+this.askQuestion();
+
+  
+var onClick = function() {
+  
+  setTimeout(
+       function() {
+  $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballAnswer.png");
+$("#answer").fadeIn(5000);
+var popQuestion = prompt("Ask a yes/no question");
+$("#8ball").effect( "shake" );}, 500);
+  
+         
+};
+
+$("#questionButton").click(onClick);
+
+$("#answer").hide();
+
+});</script></body>
+
+</html>

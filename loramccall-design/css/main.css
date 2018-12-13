@@ -1,0 +1,162 @@
+/*****base styles*****/
+
+.full-width{
+  width:100%;
+}
+
+.third-width{
+  width:33%;
+  float:left;
+}
+
+/*****HEADER*****/
+
+header{
+  height: 350px;
+  padding: 80px 100px 175px 100px;
+
+}
+nav{
+  float:right;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-spacing: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+  color:  #004466;;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+h1 {
+  color:#404040;
+  float:left;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-top: 100px;
+  word-spacing: 5px;
+}
+
+p{
+  clear:both;
+  color:#404040;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#name {
+  color:#004466;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+}
+
+/*****ABOUT*****/
+
+#about{
+  background-color: #d5ae41;
+  color: #fff3e6;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  height: 850px;
+  padding-top: 305px;
+  padding-bottom:155px;
+  text-align: center;
+}
+
+#about p{
+  color:#fff3e6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+
+}
+
+#selfie{
+  height: 300px;
+  width:300px;
+}
+
+/*****PORTFOLIO*****/
+
+#portfolio{
+  background-color: #fff3e6;
+  color: #004466;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  height:700px;
+  padding: 175px 100px 250px 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#portfolio h2{
+  padding-bottom: 50px;
+}
+
+#portfolio h3{
+  color:#004466;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#portfolio h4{
+  color:#b3b3b3;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+#portfolio a{
+  text-decoration: none;
+}
+
+.screenshot{
+  width:300px;
+  height:225px;
+}
+
+/*****CONTACT*****/
+
+#contact {
+  background-color:#d5ae41;
+  clear:both;
+  color: #fff3e6;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  height: 650px;
+  padding: 175px 100px 145px 100px;
+  text-align: center;
+}
+
+#contact h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#contact ul li{
+    display: inline-block;
+    padding: 25px 50px 0px 0px;
+}
+#email {
+  color:  #fff3e6;
+  text-decoration: none;
+}
+
+/*****Footer*****/
+
+footer{
+  background-color:#d5ae41;
+  clear:both;
+  color: #fff3e6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
